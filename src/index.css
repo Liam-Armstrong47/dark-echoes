@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: black;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.catalog ul {
+  display: grid;
+  gap: 1ch;
+
+  list-style-type: none;
+  padding: 0.25rem;
+  color: whitesmoke;
+}
+
+.catalog li {
+  padding: 1ch;
+  border: 1px solid whitesmoke;
+}
+
+.catalog li:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.details {
+  padding: 0.25rem;
+  color: whitesmoke;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+h2 {
+  color: whitesmoke;
+}
